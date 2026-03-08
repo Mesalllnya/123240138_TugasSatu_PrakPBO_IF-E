@@ -33,6 +33,9 @@ public class Tugas1 {
                     case 3:
                         tempT = new luxury(kodeT,jadwal, hargaDasar);
                         break;
+                    default:
+                        // MELEMPAR ERROR KE CATCH BAWAH
+                        throw new DataInvalidException("[ERROR SISTEM] Pilihan kelas tiket hanya boleh 1, 2, atau 3!");
                 }
                 
                 daftarTiket[jumlahTiket] = tempT;
